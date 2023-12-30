@@ -206,5 +206,3 @@ export default function Page() {
     </main>
   );
 }
-
-// - Design and development of web applications.\n - Administration database (PostgreSQL and MySQL).\n - Web systems maintenance.\n - Development of PHP scripts for database migration.\n - Migrating Web applications to Symfony.
