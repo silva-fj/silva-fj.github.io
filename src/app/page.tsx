@@ -93,11 +93,46 @@ export default function Page() {
           </Avatar>
         </div>
         <Section>
-          <h2 className="text-xl font-bold">About</h2>
+          <h2 className="text-xl font-bold">Summary</h2>
           <p className="text-pretty font-mono text-sm text-muted-foreground">
             {RESUME_DATA.summary}
           </p>
+          <h3 className="text-pretty font-mono text-sm font-semibold">
+            🌟 Key Highlights:
+          </h3>
+          <div className="text-pretty font-mono text-sm text-muted-foreground">
+            <p>
+              - Successfully delivered robust solutions across various domains.
+            </p>
+            <p>
+              - Proficient in the entire development lifecycle, from concept to
+              deployment.
+            </p>
+            <p>
+              - Strong advocate for clean code, best practices, and continuous
+              learning.
+            </p>
+            <p>
+              - Habituated to agile development environment (SCRUM, Kanban).
+            </p>
+            <p>
+              - Pleased to share knowledge, and always willing to learn new
+              things.
+            </p>
+          </div>
+          <h3 className="text-pretty font-mono text-sm font-semibold">
+            🔍 Recent Focus:
+          </h3>
+          <p className="text-pretty font-mono text-sm text-muted-foreground">
+            {`Diving deep into the exciting realm of Web3 technologies, I've spent
+            the last couple of years at the forefront of decentralized
+            applications and blockchain development, this has allowed me to
+            explore the world of decentralized finance, non-fungible tokens,
+            decentralized identity solutions and it has given me a deep
+            understanding of this exciting industry.`}
+          </p>
         </Section>
+
         <Section>
           <h2 className="text-xl font-bold">Work Experience</h2>
           {RESUME_DATA.work.map((work) => {
@@ -132,7 +167,11 @@ export default function Page() {
                   </h4>
                 </CardHeader>
                 <CardContent className="mt-2 text-xs">
-                  {work.description}
+                  {work.description.map((item) => (
+                    <p key={item} className="mb-1">
+                      - {item}
+                    </p>
+                  ))}
                 </CardContent>
               </Card>
             );
@@ -159,44 +198,31 @@ export default function Page() {
           })}
         </Section>
         <Section>
-          <h2 className="text-xl font-bold">Skills</h2>
+          <h2 className="text-xl font-bold">Hard Skills</h2>
           <div className="flex flex-wrap gap-1">
-            {RESUME_DATA.skills.map((skill) => {
+            {RESUME_DATA.hardSkills.map((skill) => {
               return <Badge key={skill}>{skill}</Badge>;
             })}
           </div>
         </Section>
-
-        <Section className="print-force-new-page scroll-mb-16">
-          <h2 className="text-xl font-bold">Projects</h2>
-          <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
-            {RESUME_DATA.projects.map((project) => {
-              return (
-                <ProjectCard
-                  key={project.title}
-                  title={project.title}
-                  description={project.description}
-                  tags={project.techStack}
-                  link={"link" in project ? project.link.href : undefined}
-                />
-              );
+        <Section>
+          <h2 className="text-xl font-bold">Soft Skills</h2>
+          <div className="flex flex-wrap gap-1">
+            {RESUME_DATA.softSkills.map((skill) => {
+              return <Badge key={skill}>{skill}</Badge>;
             })}
           </div>
         </Section>
       </section>
 
       <CommandMenu
-        links={[
-          {
-            url: RESUME_DATA.personalWebsiteUrl,
-            title: "Personal Website",
-          },
-          ...RESUME_DATA.contact.social.map((socialMediaLink) => ({
-            url: socialMediaLink.url,
-            title: socialMediaLink.name,
-          })),
-        ]}
+        links={RESUME_DATA.contact.social.map((socialMediaLink) => ({
+          url: socialMediaLink.url,
+          title: socialMediaLink.name,
+        }))}
       />
     </main>
   );
 }
+
+// - Design and development of web applications.\n - Administration database (PostgreSQL and MySQL).\n - Web systems maintenance.\n - Development of PHP scripts for database migration.\n - Migrating Web applications to Symfony.
