@@ -102,17 +102,6 @@ export default function Page() {
               things.
             </p>
           </div>
-          <h3 className="text-pretty font-mono text-sm font-semibold">
-            🔍 Recent Focus:
-          </h3>
-          <p className="text-pretty font-mono text-sm text-muted-foreground">
-            {`Diving deep into the exciting realm of Web3 technologies, I've spent
-            the last couple of years at the forefront of decentralized
-            applications and blockchain development, this has allowed me to
-            explore the world of decentralized finance, non-fungible tokens,
-            decentralized identity solutions and it has given me a deep
-            understanding of this exciting industry.`}
-          </p>
         </Section>
 
         <Section>

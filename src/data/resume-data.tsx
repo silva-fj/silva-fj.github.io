@@ -7,7 +7,7 @@ export const RESUME_DATA = {
   locationLink: "https://www.google.com/maps/place/Munich",
   about: "Passionate Software Engineer 10+ Years of Experience.",
   summary:
-    "With over a decade of hands-on experience in software engineering, I've immersed myself in diverse technological landscapes, contributing to a wide range of projects from backend services to web and mobile apps.",
+    "I am a seasoned software engineer with a strong background in web and mobile development, proficient in a wide range of technologies.",
   avatarUrl: "/avatar.jpg",
   personalWebsiteUrl: "",
   contact: {
