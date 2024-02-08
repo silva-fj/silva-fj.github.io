@@ -42,9 +42,9 @@ export const RESUME_DATA = {
       start: "Nov 2022",
       end: "Present",
       description: [
+        "Lead the front-end development of Achainable, a complex web application built with Next.js and Tailwind CSS that allows to target, analyse, and segment Web3 audiences.",
         "Develop blockchain indexing and data aggregation services for EVM based smart contracts.",
         "Designed and implemented a highly scalable notification system.",
-        "Lead the front-end development of Achainable, a complex web application that allows to target, analyse, and segment Web3 audiences.",
       ],
     },
     {
@@ -55,7 +55,7 @@ export const RESUME_DATA = {
       start: "Jun 2021",
       end: "Oct 2022",
       description: [
-        "Led the development of the Litentry mobile app. An app/wallet focused on Polkadot/Kusama's governance.",
+        "Led the development of the Litentry mobile app. An app/wallet focused on Polkadot/Kusama's governance built with react native",
         "Designed and implemented the integration of polkadot-js crypto libraries written in rust and compiled to wasm into the Litentry mobile app.",
         "Collaborated to design and implement an api gateway for the Litentry apps.",
         "Conducted technical interviews for new hires.",
