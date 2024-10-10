@@ -7,7 +7,7 @@ export const RESUME_DATA = {
   locationLink: "https://www.google.com/maps/place/Munich",
   about: "Passionate Software Engineer 10+ Years of Experience.",
   summary:
-    "I am a seasoned software engineer with a strong background in web and mobile development, proficient in a wide range of technologies.",
+    "I am a seasoned software engineer with a strong background in web3/web2 and mobile development, proficient in a wide range of technologies.",
   avatarUrl: "/avatar.jpg",
   personalWebsiteUrl: "",
   contact: {
@@ -15,7 +15,7 @@ export const RESUME_DATA = {
     social: [
       {
         name: "GitHub",
-        url: "https://github.com/franjs",
+        url: "https://github.com/silva-fj",
         icon: GitHubIcon,
       },
       {
@@ -27,6 +27,12 @@ export const RESUME_DATA = {
   },
   education: [
     {
+      school: "Polkadot Blockchain Academy",
+      degree: "Blockchain and Web3 technologies",
+      start: "May 2024",
+      end: "Jun 2024",
+    },
+    {
       school: "UNEFA",
       degree: "Bachelor's Degree in Systems engineering",
       start: "2011",
@@ -35,16 +41,31 @@ export const RESUME_DATA = {
   ],
   work: [
     {
+      company: "Litentry",
+      link: "https://www.litentry.com/",
+      badges: ["Freelance"],
+      title: "Rust Developer",
+      start: "Mar 2024",
+      end: "Present",
+      description: [
+        "Implement pallets based on Substrate/FRAME for the Litentry parachain.",
+        "Designed and developed modules for the L2 sidechain that uses TEE (Intel SGX) to ensure confidential transactions and data security.",
+        "Contribute to the WASM runtime development. (L2 sidechain and Litentry parachain)",
+        "Develop integation tests for the parachain and L2 sidechain.",
+        "Develop benchmarks for parachain pallets.",
+      ],
+    },
+    {
       company: "TDF Labs (Litentry)",
       link: "https://blog.tdf-labs.com/about",
       badges: [],
       title: "Senior Software Engineer",
       start: "Nov 2022",
-      end: "Present",
+      end: "Feb 2024",
       description: [
-        "Lead the front-end development of Achainable, a complex web application built with Next.js and Tailwind CSS that allows to target, analyse, and segment Web3 audiences.",
         "Develop blockchain indexing and data aggregation services for EVM based smart contracts.",
         "Designed and implemented a highly scalable notification system.",
+        "Lead the front-end development of Achainable, a complex web application built with Next.js and Tailwind CSS that allows to target, analyse, and segment Web3 audiences.",
       ],
     },
     {
@@ -148,6 +169,10 @@ export const RESUME_DATA = {
     },
   ],
   hardSkills: [
+    "Rust",
+    "Substrate",
+    "Polkadot",
+    "Solidity",
     "TypeScript",
     "React",
     "React Native",
@@ -160,15 +185,10 @@ export const RESUME_DATA = {
     "MongoDB",
     "Redis",
     "RabbitMQ",
-    "Solidity",
-    "Rust",
-    "Substrate",
     "Docker",
     "Kubernetes",
     "AWS",
     "Flutter",
-    "PHP",
-    "Symfony",
   ],
   softSkills: [
     "Proactive",
