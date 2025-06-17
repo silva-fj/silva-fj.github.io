@@ -139,7 +139,7 @@ export default function Page() {
                 </CardHeader>
                 <CardContent className="mt-2 text-xs">
                   {work.description.map((item) => (
-                    <p key={item} className="mb-1">
+                    <p key={item} className="mb-1.5 leading-relaxed">
                       - {item}
                     </p>
                   ))}
@@ -183,7 +183,7 @@ export default function Page() {
                   </div>
                 </CardHeader>
                 <CardContent className="mt-2">
-                  <p className="text-xs text-muted-foreground mb-2">
+                  <p className="text-xs text-muted-foreground mb-3 leading-relaxed">
                     {project.description}
                   </p>
                   <div className="flex flex-wrap gap-1">
