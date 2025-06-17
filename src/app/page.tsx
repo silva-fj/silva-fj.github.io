@@ -83,21 +83,21 @@ export default function Page() {
             🌟 Key Highlights:
           </h3>
           <div className="text-pretty font-mono text-sm text-muted-foreground">
-            <p>
+            <p className="mb-1.5 leading-relaxed">
               - Successfully delivered robust solutions across various domains.
             </p>
-            <p>
+            <p className="mb-1.5 leading-relaxed">
               - Proficient in the entire development lifecycle, from concept to
               deployment.
             </p>
-            <p>
+            <p className="mb-1.5 leading-relaxed">
               - Strong advocate for clean code, best practices, and continuous
               learning.
             </p>
-            <p>
+            <p className="mb-1.5 leading-relaxed">
               - Habituated to agile development environment (SCRUM, Kanban).
             </p>
-            <p>
+            <p className="mb-1.5 leading-relaxed">
               - Pleased to share knowledge, and always willing to learn new
               things.
             </p>
