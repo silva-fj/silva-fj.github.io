@@ -169,11 +169,48 @@ export default function Page() {
           })}
         </Section>
         <Section>
+          <h2 className="text-xl font-bold">Projects</h2>
+          {RESUME_DATA.projects.map((project) => {
+            return (
+              <Card key={project.title}>
+                <CardHeader>
+                  <div className="flex items-center justify-between gap-x-2 text-base">
+                    <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
+                      <a className="hover:underline" href={project.link.href}>
+                        {project.title}
+                      </a>
+                    </h3>
+                  </div>
+                </CardHeader>
+                <CardContent className="mt-2">
+                  <p className="text-xs text-muted-foreground mb-2">
+                    {project.description}
+                  </p>
+                  <div className="flex flex-wrap gap-1">
+                    {project.techStack.map((tech) => (
+                      <Badge key={tech} variant="outline" className="text-xs">
+                        {tech}
+                      </Badge>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            );
+          })}
+        </Section>
+        <Section>
           <h2 className="text-xl font-bold">Hard Skills</h2>
-          <div className="flex flex-wrap gap-1">
-            {RESUME_DATA.hardSkills.map((skill) => {
-              return <Badge key={skill}>{skill}</Badge>;
-            })}
+          <div className="space-y-4">
+            {Object.entries(RESUME_DATA.hardSkills).map(([category, skills]) => (
+              <div key={category}>
+                <h3 className="text-sm font-semibold text-gray-700 mb-2">{category}</h3>
+                <div className="flex flex-wrap gap-1">
+                  {skills.map((skill) => (
+                    <Badge key={skill} variant="secondary">{skill}</Badge>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
         </Section>
         <Section>
@@ -182,6 +219,19 @@ export default function Page() {
             {RESUME_DATA.softSkills.map((skill) => {
               return <Badge key={skill}>{skill}</Badge>;
             })}
+          </div>
+        </Section>
+        <Section>
+          <h2 className="text-xl font-bold">Languages</h2>
+          <div className="flex flex-wrap gap-2">
+            {RESUME_DATA.languages.map((lang) => (
+              <div key={lang.language} className="flex flex-col items-center">
+                <Badge variant="outline">{lang.language}</Badge>
+                <span className="text-xs text-muted-foreground mt-1">
+                  {lang.proficiency}
+                </span>
+              </div>
+            ))}
           </div>
         </Section>
       </section>
